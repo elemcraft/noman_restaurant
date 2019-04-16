@@ -43,7 +43,9 @@ transform:translate(-50%,-50%);
 }
 .card:hover > .front{
   transform:perspective(600px) rotateY(-180deg);
+  opacity:0;
 }
 .card:hover > .back{
   transform:perspective(600px) rotateY(0deg);
+  position:absolute;
 }
