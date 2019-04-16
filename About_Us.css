@@ -1,6 +1,7 @@
 h1{
-    align:center;
+    align-items:center;
     font-family:"montserrat";
+    color:white;
 }
 *{
     margin:0;
