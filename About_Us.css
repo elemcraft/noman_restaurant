@@ -24,7 +24,7 @@ transform:translate(-50%,-50%);
   overflow:hidden;
   backface-visibility:hidden;
   position:absolute;
-  transition:transform .6s linear;
+  transition:transform .1s linear;
 }
 .front img{
   height:100%;
