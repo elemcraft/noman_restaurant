@@ -15,8 +15,8 @@ transform:translate(-50%,-50%);
 }
 .card{
   cursor:pointer;
-  width:340px;
-  height:480px;
+  width:250px;
+  height:360px;
 }
 .font,back{
   width:100%;
