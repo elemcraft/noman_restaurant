@@ -46,6 +46,5 @@ transform:translate(-50%,-50%);
   opacity:0;
 }
 .card:hover > .back{
-  transform:perspective(600px) rotateY(0deg);
-  position:absolute;
+  transform:perspective(600px) rotateY(0deg)
 }
