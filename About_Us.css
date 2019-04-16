@@ -18,6 +18,9 @@ body{
     width:250px;
     height:360px;
 }
+.front img{
+    height:100%;
+}
 .front,.back{
     width:100%;
     height:100%;
@@ -26,17 +29,14 @@ body{
     position:absolute;
     transition:transform .7s linear;
 }
-.front img{
-    height:100%;
-}
 .front{
     transform:perspective(600px) rotateY(0deg);
-  
+    z-index:1;
 }
 .back{
     background:#f1f1f1;
     transform:perspective(600px) rotateY(180deg);
-    
+    z-index:2;
 }
 .back-content{
     color:#2c3e50;
