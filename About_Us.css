@@ -10,8 +10,22 @@ body{
 .middle{
     position:absolute;
     top:50%;
-    right:10%;
     transform:translate(-50%,-50%);
+}
+first{
+    left:10%;
+}
+second{
+    left:30%;
+}
+third{
+    left:50%;
+}
+fourth{
+    left:70%;
+}
+fifth{
+    left:90%;
 }
 .card{
     cursor:pointer;
