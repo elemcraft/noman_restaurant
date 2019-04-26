@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Poppins:20');*/
 body{
     margin:0;
     padding:0;
@@ -13,7 +12,7 @@ body{
     background-color:#fff;
 }
 .container{
-    position:relative; 
+    position:absolute; 
     width:300px;
     height:400px;
     background-color:#262626;
@@ -26,14 +25,18 @@ input, .toggle{
     position:absolute;
     width:50px;
     height:50px;
-    top:200px;
-    left:150px;
-    /*top:50%;
-    left:50%;*/
-    /*bottom:20px;
-    right:20px;*/
+
+    right:20px;
+    bottom:20px;
+    /*
+    transform:translate(-50%,-50%);
+    top:85%;
+    left:80%;
+    */
+    
     outline:none;
     z-index:10;
+
 }
 input{
     opacity:0;
@@ -41,15 +44,18 @@ input{
 .toggle{
     pointer-events:none;
     border-radius:50%;
-    background:#fff;
-    transition:0.5s;
+    background-color:#fff;
+    
     text-align:center;
     line-height:50px;
     font-size:36px;
-    box-shadow:0 0 0 0px #9c27b0;
+    box-shadow:0 0 0 0px #999;
+    transition: 0.5s;
+
 }
+
 input:checked ~ .toggle{
-    box-shadow:0 0 0 500px #9c27b0;
+    box-shadow:0 0 0 500px #999;
     transform:rotate(225deg);
 }
 .image, .details{
@@ -64,7 +70,7 @@ input:checked ~ .toggle{
     box-sizing:border-box;
     z-index:11;
     pointer-events:none;
-    transition:0.5s;
+    transition:opacity 0.5s;
     opacity:0;
 }
 input:checked ~ .details{
@@ -74,6 +80,7 @@ input:checked ~ .details{
 .details h2{
     margin-bottom:5px;
     color:#fff;
+    
 }
 .details p{
     margin:0;
